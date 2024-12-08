@@ -105,6 +105,21 @@ export default function Home() {
             }}>
             Iniciar Conversa
           </Link>
+          <Link href="/events">
+            <button
+              style={{
+                marginTop: '20px',
+                backgroundColor: '#0070f3',
+                color: '#fff',
+                border: 'none',
+                padding: '10px 20px',
+                borderRadius: '5px',
+                cursor: 'pointer',
+              }}
+            >
+              Ver Eventos
+            </button>
+          </Link>
         </div>
       </main>
 
