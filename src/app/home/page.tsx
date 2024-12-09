@@ -1,6 +1,7 @@
 // pages/landing.tsx
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function LandingPage() {
   return (
@@ -20,20 +21,19 @@ export default function LandingPage() {
           color: '#E1F532',
           padding: '30px',
           borderRadius: '15px',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          backgroundColor: 'rgba(0, 0, 0, 0.2)',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
           maxWidth: '400px',
           width: '100%',
         }}
       >
-        <h1 style={{ fontSize: '36px', marginBottom: '20px', fontWeight: 'bold', color: '#E1F532' }}>VAI</h1>
-
+        <Image src="/logo.svg" alt="Logo" width={70} height={70} style={{ marginBottom: '5px' }} />
         <Link
           href="/login"
           style={{
             display: 'block',
-            backgroundColor: '#E1F532',
-            color: '#5541BA',
+            backgroundColor: '#202010',
+            color: '#E1F532',
             border: 'none',
             padding: '15px 30px',
             borderRadius: '8px',
@@ -52,8 +52,8 @@ export default function LandingPage() {
           href="/register"
           style={{
             display: 'block',
-            backgroundColor: '#E1F532',
-            color: '#5541BA',
+            backgroundColor: '#202010',
+            color: '#E1F532',
             border: 'none',
             padding: '15px 30px',
             borderRadius: '8px',

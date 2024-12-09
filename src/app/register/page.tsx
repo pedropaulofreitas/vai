@@ -1,5 +1,7 @@
 // pages/register.tsx
 'use client';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function RegisterPage() {
   return (
@@ -16,17 +18,31 @@ export default function RegisterPage() {
     >
       <div
         style={{
-          backgroundColor: 'rgba(0, 0, 0, 0.7)',
-          padding: '30px',
+          backgroundColor: 'rgba(0, 0, 0, 0.2)',
+          padding: '15px 35px',
           borderRadius: '15px',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
           maxWidth: '400px',
           width: '100%',
           textAlign: 'center',
+          position: 'relative',
         }}
       >
-        <h1 style={{ marginBottom: '20px', fontWeight: 'bold', fontSize: '28px' }}>CADASTRO</h1>
-        <p style={{ marginBottom: '10px' }}>ENTRE COM</p>
+        <Link
+          href="/home"
+          style={{
+            position: 'absolute',
+            top: '20px', left: '20px',
+            color: '#E1F532',
+            textDecoration: 'none',
+            fontSize: '20px',
+          }}
+        >
+          ←
+        </Link>
+        <Image src="/logo.svg" alt="Logo" width={70} height={70} style={{ marginBottom: '5px' }} />
+        <h1 style={{ marginBottom: '15px', fontWeight: 'bold', fontSize: '22px', textAlign: 'left'}}>CADASTRO</h1>
+        <p style={{ marginBottom: '5px', fontSize: '11px', textAlign: 'left' }}>ENTRE COM</p>
         <button
           style={{
             backgroundColor: '#FFF',
@@ -38,20 +54,23 @@ export default function RegisterPage() {
             fontWeight: 'bold',
             marginBottom: '20px',
             cursor: 'pointer',
+            float: 'left'
           }}
         >
           G
         </button>
-        <input
+        <input 
           type="text"
           placeholder="NOME DE USUÁRIO"
-          style={{
+          style={{ 
             width: '100%',
             padding: '10px',
             marginBottom: '15px',
             borderRadius: '8px',
-            border: '1px solid #E1F532',
+            border: '1px solid #FFF',
             outline: 'none',
+            backgroundColor: '#5541BA',
+            color: '#FFF' 
           }}
         />
         <input
@@ -62,8 +81,10 @@ export default function RegisterPage() {
             padding: '10px',
             marginBottom: '15px',
             borderRadius: '8px',
-            border: '1px solid #E1F532',
+            border: '1px solid #FFF',
             outline: 'none',
+            backgroundColor: '#5541BA',
+            color: '#FFF',
           }}
         />
         <input
@@ -74,8 +95,10 @@ export default function RegisterPage() {
             padding: '10px',
             marginBottom: '15px',
             borderRadius: '8px',
-            border: '1px solid #E1F532',
+            border: '1px solid #FFF',
             outline: 'none',
+            backgroundColor: '#5541BA',
+            color: '#FFF',
           }}
         />
         <input
@@ -86,14 +109,16 @@ export default function RegisterPage() {
             padding: '10px',
             marginBottom: '15px',
             borderRadius: '8px',
-            border: '1px solid #E1F532',
+            border: '1px solid #FFF',
             outline: 'none',
+            backgroundColor: '#5541BA',
+            color: '#FFF',
           }}
         />
         <button
           style={{
-            backgroundColor: '#E1F532',
-            color: '#5541BA',
+            backgroundColor: '#202010',
+            color: '#E1F532',
             border: 'none',
             padding: '15px 30px',
             borderRadius: '8px',
