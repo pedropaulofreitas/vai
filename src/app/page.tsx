@@ -5,9 +5,25 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page} style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <header className={styles.header} style={{ background: 'white', padding: '1rem' }}>
-        <p>Vem com a gente!</p>
-      </header>
+     
+
+     <header style={{ 
+      background: 'white', 
+      padding: '1rem', 
+      display: 'flex', 
+      alignItems: 'center',
+      justifyContent: 'center',
+      position: 'relative',
+      marginBottom: '20px',
+      width: '100%'
+    }}>
+      <Image
+        src="/logo.svg"
+        alt="VAI Logo"
+        width={50}
+        height={50}
+      />
+    </header>
 
       <main className={styles.main} style={{ flex: 1, background: '#f5f5f5', padding: '2rem' }}>
         <div className={styles.chatContainer} style={{
@@ -105,22 +121,27 @@ export default function Home() {
             }}>
             Iniciar Conversa
           </Link>
-          <Link href="/events">
-            <button
-              style={{
-                marginTop: '20px',
-                backgroundColor: '#0070f3',
-                color: '#fff',
-                border: 'none',
-                padding: '10px 20px',
-                borderRadius: '5px',
-                cursor: 'pointer',
-              }}
-            >
-              Ver Eventos
+        </div>
+        <Link href="/events/register">
+            <button style={{
+              border: 'none',
+              background: '#5541BA',
+              color: 'white',
+              cursor: 'pointer',
+              position: 'absolute',
+              bottom: '10vh',
+              right: '15px',
+              width: '50px',
+              height: '50px',
+              textDecoration: 'none',
+              display: 'block',
+              fontWeight:1000,
+              fontSize:20,
+              borderRadius: '50%',
+            }}>
+              +
             </button>
           </Link>
-        </div>
       </main>
 
       <footer className={styles.footer} style={{ background: 'white', padding: '1rem', textAlign: 'center' }}>

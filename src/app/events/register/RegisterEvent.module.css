@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 0.5rem 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80VW;
+}
+
+.formContent {
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #3b82f6;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: white;
+}
+
+.input::placeholder {
+  color: white;
+}
+
+.input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #3b82f6;
+}
+
+.textarea {
+  composes: input;
+  height: 8rem;
+}
+
+.button {
+  width: 60%;
+  background-color: black;
+  color: #E1F532;
+  padding: 0.75rem 1.5rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  transition: background-color 0.3s;
+  margin: 0 auto;
+  display: block;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
