@@ -107,16 +107,16 @@ export default function EventList() {
               <Map
                 mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
                 initialViewState={{
-                  longitude: event.coordinates?.lng || 0,
-                  latitude: event.coordinates?.lat || 0,
+                  longitude: -43.2096,
+                  latitude: -22.9035,
                   zoom: 14
                 }}
                 style={{ width: '100%', height: '100%' }}
                 mapStyle="mapbox://styles/mapbox/streets-v11"
               >
                 <Marker
-                  longitude={event.coordinates?.lng || 0}
-                  latitude={event.coordinates?.lat || 0}
+                   longitude={-43.2096}
+                   latitude={-22.9035}
                 />
               </Map>
             </div>

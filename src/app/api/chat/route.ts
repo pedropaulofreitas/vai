@@ -26,7 +26,7 @@ Otherwise, continue the conversation naturally, asking questions to better under
     };
 
     const completion = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: "gpt-4o-mini",
       messages: [systemPrompt, ...messages.map((msg: { role: string; content: string }) => ({
         role: msg.role,
         content: msg.content,
