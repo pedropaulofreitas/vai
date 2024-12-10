@@ -1,0 +1,7 @@
+.mapContainer {
+  flex: 1;
+  height: 30vh;
+  border-radius: 15px;
+  overflow: hidden;
+  margin:5px
+}
